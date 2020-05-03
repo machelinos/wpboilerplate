@@ -3,7 +3,6 @@
 	//enqueue stylesheets and scripts
 	function wpboilerplate_styles_scripts(){
 		wp_enqueue_style('main-styles', get_stylesheet_uri() );
-		wp_enqueue_script('modernizr', get_template_directory_uri().'/assets/js/vendor/modernizr-3.7.1.min.js',array(),'3.7.1' );
 		wp_enqueue_script('plugins',get_template_directory_uri().'/assets/js/plugins.js',array('jquery'),'1.0',true);
 		wp_enqueue_script('main-scripts',get_template_directory_uri().'/assets/js/main.js',array('jquery'),'1.0',true);
 	}
